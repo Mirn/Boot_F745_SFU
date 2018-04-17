@@ -166,7 +166,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
 void usart_init()
 {
 	huart1.Instance = USART1;
-	huart1.Init.BaudRate   = 921600;
+	huart1.Init.BaudRate   = USART_BOD;
 	huart1.Init.WordLength = UART_WORDLENGTH_8B;
 	huart1.Init.StopBits   = UART_STOPBITS_1;
 	huart1.Init.Parity     = UART_PARITY_NONE;
